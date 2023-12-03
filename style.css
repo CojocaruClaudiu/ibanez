@@ -87,7 +87,7 @@ footer {
   width: 100%;
   background-color: #333;
   padding: 10px 0;
-  background-image: url("/imagini/footer.jpg");
+  background-image: url("imagini/footer.jpg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -107,19 +107,19 @@ footer p {
 
 @keyframes zoomBackground {
   0% {
-    background: url("/imagini/1.jpg") center/cover fixed;
+    background: url("imagini/1.jpg") center/cover fixed;
   }
   25% {
-    background: url("/imagini/2.jpg") center/cover fixed;
+    background: url("imagini/2.jpg") center/cover fixed;
   }
   50% {
-    background: url("/imagini/3.jpg") center/cover fixed;
+    background: url("imagini/3.jpg") center/cover fixed;
   }
   75% {
-    background: url("/imagini/4.jpg") center/cover fixed;
+    background: url("imagini/4.jpg") center/cover fixed;
   }
   100% {
-    background: url("/imagini/1.jpg") center/cover fixed;
+    background: url("imagini/1.jpg") center/cover fixed;
   }
 }
 
