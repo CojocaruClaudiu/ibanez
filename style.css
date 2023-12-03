@@ -257,7 +257,7 @@ footer p {
   color: #fff;
 }
 
-.album-item p:hover{
+.album-item p:hover {
   transform: translateY(28px);
   transition: transform 0.2s ease-out;
 }
