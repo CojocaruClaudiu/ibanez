@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="imagini/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <title>Ibanez Guitars</title>
   </head>
-
   <body>
     <header>
       <div class="banner">
@@ -50,7 +51,7 @@
         </div>
       </div>
     </header>
-    <div class="content">
+    <div class="content" style="position: relative;">
       <div class="links">
         <h1>Start Your Guitar Journey!</h1>
         <h3>Your Journey Starts Here</h3>
@@ -94,6 +95,30 @@
       />
       <div class="top-left"><h1>Latest News</h1></div>
     </div>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div><img src="imagini/top_AZES.jpg" alt="imagine 1" /></div>
+        <div><img src="imagini/featured-products_grg121spbmc.jpg" alt="imagine 2" /></div>
+        <div><img src="imagini/news_AZ2407F.jpg" alt="imagine 3" /></div>
+        <div><img src="imagini/footer.jpg" alt="imagine 4" /></div>
+        
+      </div>
+      <h3>Latest </h3>
+    </div>
+    
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $('.carousel').slick({
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script>
 
     <footer>
       <a href="index.html" class="logo">
