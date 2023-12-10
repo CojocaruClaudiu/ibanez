@@ -1,21 +1,24 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  box-sizing: border-box;
+  
 }
 
 body {
-  margin: 0;
   overflow-y: scroll;
   animation: zoomBackground 30s infinite alternate;
   position: relative;
-  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #333;
 }
 
 header {
   text-align: center;
   padding: 40px 20px;
 }
+
+
 
 body::before,
 body::after {
@@ -45,6 +48,7 @@ body::after {
   justify-content: space-between;
   font-size: 1.4rem;
   position: relative;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -306,7 +310,9 @@ footer p {
   
   align-items: left;
   z-index: 0;
+ 
 }
+
 .about-section h2 {
   text-align: left;
   color: #fff;
@@ -315,7 +321,8 @@ footer p {
   background-color: rgba(32, 32, 32, 0.7);
   display: inline-block;
   padding: 10px;
-  margin-bottom: 0px
+  margin-bottom: 0px;
+  margin-top: 130px;
 }
 
 
@@ -339,7 +346,7 @@ iframe {
   
 }
 .pagina_about .content p{
-  background: rgba(32, 32, 32, 0.7); /* Use RGBA for semi-transparent white background */
+  background: rgba(32, 32, 32, 0.7); 
   border-radius: 15px;
   font-size: 24px;
   
@@ -353,56 +360,21 @@ iframe {
 
 .paragraph iframe,
 .paragraph audio {
+  position: relative;
   width: 100%;
   height: auto;
 }
 .audios {
   flex: 1;
-  max-width: 48%;
-}
-
-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-top: 30px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input,
-textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #555;
-}
-
-
-
-.flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  max-width: 60%;
+ margin-top: -550px;
 }
 
 .paragraph {
   flex-basis: calc(60% - 10px); /* Adjust the width and margin as needed */
   margin-bottom: 20px;
   box-sizing: border-box;
+  
 }
 
 .left {
@@ -416,9 +388,67 @@ button:hover {
 } 
 
 
+/*contact */
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 30px;
+}
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 12px; /* Increase margin for additional spacing */
+  align-items: center;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+  
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+
+body.contact-page .content {
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-section {
+  text-align: center;
+  background: rgba(32, 32, 32, 0.7);
+  padding: 30px; /* Increase padding for a larger section */
+  border-radius: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px; /* Increase padding for larger input fields */
+  margin-bottom: 15px; /* Increase margin for additional spacing */
+  font-size: 16px; /* Adjust font size as needed */
+}
 
 
 
+/*CV*/
 
 
 
